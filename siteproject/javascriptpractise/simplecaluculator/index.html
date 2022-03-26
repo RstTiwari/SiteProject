@@ -1,0 +1,161 @@
+<!Doctype html>
+<html lang ="eng">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width = device-width, intial-scale =1.0">
+        <title>Simple Calculator</title>
+
+        <style>
+            **{
+                margin: 0 0;
+            }
+            body{
+                text-align: center;
+            }
+            #calculator{
+
+                
+                width: 300px;
+                margin: 0 auto;
+                padding: 20px 20px;
+                text-align: center;
+                border: orangered solid thin;
+                background-color: peru;
+                box-shadow: 0 0 10px;
+                
+            }
+
+            /*calculate area design*/
+            #calculation-area{
+                display: flex;
+                flex: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            #calculation-area > span ,
+            #calculation-area > textarea{
+                display:inline-flex ;
+                flex: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            #calculation-area > textarea{
+                display: block;
+                letter-spacing: 2.5px;
+                min-height: 50px;
+                resize: none;
+
+            }
+
+            #calculation-area >span{
+                font-size: 2em;
+            }
+
+            /*button area stylee*/
+
+            #button-area {
+                padding: 10px 0;
+            }
+
+            .btn-group{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn-group > span{
+                display: inline-flex;
+                flex:  1 1;
+                padding:  15px 10px;
+                justify-content: center;
+                border-radius: 50%;
+                margin: 4px;
+                font-size: 2em;
+                background-color: salmon;
+               
+
+
+
+            }
+            .btn-group  > span.calc{
+                flex: 2.5;
+              
+                background-color: red;
+            }
+            .btn-group >span:hover{
+                background-color: snow;
+            }
+
+
+
+
+        </style>
+
+    </head>
+    <body>
+       <!----Calculator body  for hole Layout-->
+        <div id = "calculator">  
+            <section id="calculation-area">
+                <span>Calculator</span><br>
+                <textarea id="view" disabled></textarea>
+
+            </section>
+            <!---Btn area design layout-->
+            <section id="btn-area">
+                <div class="btn-group">
+                    <span class="cancel">C</span>
+                    <span class="opr">%</span>
+                    <span class="del">&#x2039;</span>
+                    <span class="opr">/</span>
+
+                </div>
+
+                <div class="btn-group">
+                    <span class="num">7</span>
+                    <span class="num">8</span>
+                    <span class="num">9</span>
+                    <span class="opr">*</span>
+
+                </div>
+
+                <div class="btn-group">
+                    <span classs="num">4</span>
+                    <span class="num">5</span>
+                    <span class="num">6</span>
+                    <span class="opr">-</span>
+                </div>
+
+                <div class="btn-group">
+                    <span class="num">1</span>
+                    <span class="num">2</span>
+                    <span class="num">3</span>
+                    <span class="opr">+</span>
+
+                </div>
+
+                <div class="btn-group">
+                    <span class="num">0</span>
+                    <span class="num">.</span>
+                    <span class="calc">=</span>
+                   
+
+                </div>
+
+
+               
+                
+            </section>
+
+        </div>
+
+      
+
+        <script src="index.js"></script>
+        
+
+    </body>
+
+</html>

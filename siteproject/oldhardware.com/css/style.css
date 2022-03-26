@@ -1,0 +1,288 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*header decoraion start from here*/
+.topnav{
+  position:fixed;
+  background-color: lightblue;
+  display:flex;
+  padding: 10px 10px;
+  border-bottom:solid orange;
+  border-top:  solid orange;
+
+  
+
+
+}
+.topnav a{
+  position: relative;
+  text-decoration: none;
+  color: green;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.topnav a:hover{
+  background-color:white;
+}
+.logo{
+  font-size: 25px;
+  color: green;
+}
+.search-container{
+  margin-left: 115px;
+  padding: 8px ;
+}
+
+
+
+.contact{
+  margin-left: 350px ;
+  word-spacing: 25px;
+  padding:8px;
+}/* header decoration ends here*/
+
+/* side bar nav start from here*/
+.paragraph{
+  position: fixed;
+  margin-top :75px;
+  border-bottom: thin orange solid ;
+  padding-right: 16px;
+  padding-left: 5px;
+
+  
+ 
+}  
+
+ul{
+
+   position:fixed;
+   list-style-type: none;
+   word-spacing: 2px;
+   margin:39px 0px;
+   padding: 0px;
+   color: black;
+   border-right: thin orange solid;
+   
+   
+
+}
+.category{
+  margin: 52px 0px;
+ 
+  position:fixed;
+  line-height: 2.3em;
+  
+ 
+ 
+  border-spacing: 10px;
+
+  padding-right: 20px;
+  padding-left: 5px;
+  border-right: thin orange solid;
+ 
+}
+.category a{
+  text-decoration: none;
+  color: black;
+}
+.category a:hover{
+  text-decoration: underline;
+  background-color:powderblue;
+  float: inline-end;
+ 
+ 
+
+}/*side bar nav end here*/
+
+
+
+/*Slideshow decoration start from here*/
+
+.mySlides {display: none}
+img {vertical-align: center;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: fixed;
+  margin:  100px 300px;
+ 
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: 350px;
+    
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ .dot:hover {
+  background-color: black;
+}
+.dot:active{
+  background-color: black;
+}
+/*styling the offer button on home page*/
+.offer{
+  position: fixed;
+  margin-top: -150px;
+  margin-left: 15px;
+  font-size: 35px;
+}
+
+.shop{
+  background-color: chartreuse;
+}
+.title_best{
+  margin-left: 180px;
+}
+h3{
+  position: fixed;
+  margin-top: -35px;
+}
+.bestseller{
+  position: fixed;
+  margin-left: 180px;
+  margin-top: 20px;
+  display: flex;
+  gap: 4%;
+  position: fixed;
+
+  
+  
+}
+.products a{
+  padding-top: 2px;
+}
+.products:hover img{
+border: thin yellow solid;
+transform: translate(0.5);
+}
+
+
+/*Delta Grinder Product details */
+.detla-grinder{
+  margin-left: 100px;
+  margin-top: 5px;
+
+}
+.img:hover{
+  padding-top: 4px;
+}
+.product-details{
+  margin-left: 650px;
+  margin-top: -400px;
+}
+
+/*festo Product details */
+.fest-cylinder{
+  position: relative;
+  margin-left: 130px;
+  margin-top: 0px;
+
+}
+.img:hover{
+  padding-top: 4px;
+}
+.product-details{
+  margin-left: 650px;
+  margin-top: -400px;
+}
+
+/*Specification  table design and stryling*/
+table ,tr,th,td{
+  border: 1px solid black;
+  text-align: center;
+  width: 60%;
+  height: 40%;
+
+}
+
+.td {
+  height: 50px;
+  vertical-align: bottom;
+}
+.bybutton{
+  margin-top: 50px;
+  word-spacing: 20px;
+  border: aqua;
+  
+}
+
+
+
+ 
+ 
+
+
+
+/*Specification table design and stryling*/
+table ,tr,th,td{
+  border: 1px solid black;
+  text-align: center;
+  width: 70%;
+
+}
+
+.td {
+  height: 50px;
+  vertical-align: bottom;
+}
+.bybutton{
+  margin-top: 200px;
+  word-spacing: 20px;
+  border: aqua;
+  
+}
+
+
+*Delta Grinder Product details */
+.detla-grinder{
+  margin-left: 100px;
+  margin-top: 5px;
+
+}
+.img:hover{
+  padding-top: 4px;
+}
+.product-details{
+  margin-left: 650px;
+  margin-top: -300px;
+}
+
+/*Specification table design and stryling*/
+table ,tr,th,td{
+  border: 1px solid black;
+  text-align: center;
+  width: 50%;
+
+}
+
+.td {
+  height: 50px;
+  vertical-align: bottom;
+}
+.bybutton{
+  margin-top: 50px;
+  word-spacing: 20px;
+  border: aqua;
+  
+}
+
+  
+
+
+
+

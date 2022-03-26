@@ -1,0 +1,60 @@
+/*
+h1 - 48px
+h2 - 36px
+h3 - 28px
+all other text - 21px
+
+colors: 
+   #588C94 
+   #1D3C41
+*/
+/* Global icon setting*/
+body{
+    margin: 0%;
+    font-size: 21px;
+    background-image: url("bhuigaon2.jpg");
+    
+
+}
+/*Typography*/
+
+h1{
+    font-size: 48px;
+
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 28px;
+}
+
+/*Sheet layout */
+header{
+    background-color:#588C94  ;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.intro{
+
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.myskills{
+    background-color: #1D3C41;
+    color: #fff;
+    padding: 75px 0;
+    text-align: center;
+}
+.columns{
+    display: flex;
+}
+.column{
+    margin: 25px;
+    display: inline;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+
+        <script>
+            //defining the Function of the value
+            function myFunction(){
+                // geting the value of input from num id
+                 let x =document.getElementById("numb").value;
+               
+                 // checking if the value letter or less than 1 or gretrer thean 10
+
+                 let text ;
+               
+                 if (isNaN(x)){
+                     text = "Input is letter"
+                 }else if( x < 1){
+                     text = "Input is less than 1"
+                 }else if( x > 10){
+                     text = "Input is greter than 10"
+
+                 }
+                 else{
+                    text ="Input is ok"
+               
+                 }
+                 // displaying the value by DOM
+                 
+                 document.getElementById("demo").innerHTML = text
+
+            }
+        </script>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <p>this is practise of javascript input value anf conditnal statment</p>
+        <input id = "numb">
+       
+        <button type="submit" onclick="myFunction()">submmit</button>
+        <p id ="demo"></p>
+    </body>
+
+</html>

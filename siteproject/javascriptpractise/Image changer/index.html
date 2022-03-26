@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+/* Modal Content (image) */
+
+</style>
+<body>
+
+<div>
+<div class="container">
+  <div class="mySlides">
+    
+    <img class="myimg" src="image-product-1.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+   
+    <img  class="myimg" src="image-product-2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+   
+    <img class="myimg" src="image-product-3.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+  
+    <img class="myimg" src="image-product-4.jpg" style="width:50%">
+  </div>
+
+ 
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+
+  <div class="row">
+    <div class="column">
+      <img class="dot" src="image-product-1-thumbnail.jpg" style="width:70%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="dot" src="image-product-2-thumbnail.jpg" style="width:70%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="dot" src="image-product-3-thumbnail.jpg" style="width:70%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="dot" src="image-product-4-thumbnail.jpg" style="width:70%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  
+  </div>
+
+</div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+<script>
+    var slideindex =1;
+
+    function showSlides (n){
+        var i ;
+        var slides =document.getElementsByClassName("mySlides");
+        var dot  =  document.getElementsByClassName("dot");
+
+        if ( n > slides.length){slideindex =1}
+        if( n  < 1){slideindex = slides.length++}
+
+        for ( i = 0 ;i < slides.length ; i++){
+            slides[i].style.display = 'none'
+        }
+        for( i =0  ; i < dot.length ; i++){
+            dot[i].className = dot[i].className.replace( "active" ," ")
+        }
+
+        slides[slideindex-1].style.display ="block";
+        dot[slideindex-1].className += " active"
+
+
+
+    }
+    function currentSlide(n){
+        showSlides(slideindex =n)
+    }
+
+    function plusSlides(n){
+        showSlides(slideindex +=n)
+    }
+   showSlides(slideindex)
+
+   // writng function for model image creation
+   var model = document.getElementById('myModal')
+   var myimg = document.getElementsByClassName('myimg')
+   var img1 = document.getElementById('img01')
+
+   // this function to on click
+   myimg.onclick = function(){
+       model.style.display="block"
+       img1.src= this.src
+   }
+
+
+</script>
+    
+</body>
+</html>

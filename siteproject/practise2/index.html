@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter value from 1 to 10" class="input">
+    <input type="submit" value="submit" class="submit">
+    <p class="put"></p>
+    <script>
+        
+        let put = document.querySelector(".put")
+     
+        let  submit = document.querySelector(".submit")
+        submit.addEventListener("click" , calculate)
+      function calculate(){
+          let text;
+          let input = document.querySelector(".input").value
+          if( input = " ") {
+              text ="value is ok"
+          } else if(isNaN(input)|| input < 1 || input >  10) {
+              alert("pls enter a value")
+             
+          } else{
+              text ="update programe"
+          }
+         put.innerHTML =text;
+
+      }
+       
+    </script>
+
+</body>
+</html>
